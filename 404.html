@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | IRHR–ALAAI Rural Health Transformation Challenge</title>
+  <meta name="robots" content="noindex">
+  <!--
+    GitHub Pages can show this page at any address, so it carries its own
+    styles instead of linking to assets/css/styles.css.
+  -->
+  <style>
+    :root { --crimson: #9E1B32; --crimson-dark: #7A1426; --ink: #2B2B2B; --muted: #5C5650; --sand: #F5F3F1; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--sand);
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      border-top: 4px solid var(--crimson);
+    }
+    main { flex: 1; display: grid; place-items: center; padding: 48px 16px; text-align: center; }
+    .icon { width: 56px; height: 56px; margin-bottom: 20px; }
+    .kicker { margin: 0 0 8px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--crimson); }
+    h1 { margin: 0 0 12px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 1.3rem + 2vw, 2.6rem); line-height: 1.2; }
+    p { margin: 0 auto 24px; max-width: 46ch; color: var(--muted); font-size: 1.1rem; }
+    a.btn { display: inline-block; padding: 12px 22px; border-radius: 6px; background: var(--crimson); color: #fff; font-weight: 700; text-decoration: none; }
+    a.btn:hover { background: var(--crimson-dark); }
+    a:focus-visible { outline: 3px solid #0B5CAD; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div>
+      <svg class="icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="14" fill="#9E1B32"/><path d="M26 14h12v12h12v12H38v12H26V38H14V26h12z" fill="#fff"/></svg>
+      <p class="kicker">IRHR–ALAAI Rural Health Transformation Challenge</p>
+      <h1>Page not found</h1>
+      <p>The page you are looking for may have moved. Use the home page to find challenge information, courses, and resources.</p>
+      <a class="btn" id="home-link" href="index.html">Go to the home page</a>
+    </div>
+  </main>
+  <script>
+    // On a github.io project site the home page lives at /<repository-name>/.
+    // Elsewhere (custom domain or a user site) it lives at /.
+    (function () {
+      var link = document.getElementById("home-link");
+      var segments = location.pathname.split("/").filter(Boolean);
+      var onProjectSite = /\.github\.io$/i.test(location.hostname) && segments.length > 0;
+      link.href = onProjectSite ? "/" + segments[0] + "/" : "/";
+    })();
+  </script>
+</body>
+</html>
