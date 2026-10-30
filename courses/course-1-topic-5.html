@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 1, Topic 5: Verify captures and document gaps | IRHR–ALAAI Rural Health Transformation Challenge</title>
+  <meta name="description" content="Accept, correct, or reject each captured value against its source, and keep gaps and conflicts visible.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Course 1, Topic 5: Verify captures and document gaps">
+  <meta property="og:description" content="Accept, correct, or reject each captured value against its source, and keep gaps and conflicts visible.">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+  <script src="../assets/js/site-config.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <a class="brand" href="../index.html">
+        <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="14" fill="#9E1B32"/><path d="M26 14h12v12h12v12H38v12H26V38H14V26h12z" fill="#fff"/></svg>
+        <span class="brand-text">
+          <span class="brand-kicker">IRHR–ALAAI</span>
+          <span class="brand-title">Rural Health Transformation Challenge</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm header-cta" href="../apply.html">Apply</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true"></span>Menu</button>
+      </div>
+    </div>
+  </div>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">The Challenge</a></li>
+        <li class="has-sub">
+          <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-participate">Participate</button>
+          <ul class="sub-menu" id="sub-participate">
+            <li><a href="../apply.html">Apply</a></li>
+            <li><a href="../timeline.html">Timeline</a></li>
+            <li><a href="../faq.html">Frequently Asked Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <button class="sub-toggle is-current" type="button" aria-expanded="false" aria-controls="sub-courses">Short Courses</button>
+          <ul class="sub-menu sub-menu-wide" id="sub-courses">
+            <li><a href="index.html">Course overview</a></li>
+            <li><a href="course-1.html" aria-current="true">1. Rural Health Data Collection</a></li>
+            <li><a href="course-2.html">2. Data Curation and Integration</a></li>
+            <li><a href="course-3.html">3. Rural Healthcare Sustainability Analysis</a></li>
+            <li><a href="course-4.html">4. Clinic Service and Business Model Development</a></li>
+            <li><a href="course-5.html">5. AI Applications and Scenario Testing</a></li>
+            <li><a href="course-6.html">6. Evidence Based Recommendations and Communication</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-resources">Resources</button>
+          <ul class="sub-menu" id="sub-resources">
+            <li><a href="../resources.html">Resources and Templates</a></li>
+            <li><a href="../references.html">References</a></li>
+          </ul>
+        </li>
+        <li><a href="../submission.html">Submit &amp; Judging</a></li>
+        <li><a href="../team.html">Team &amp; Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Short Courses</a></li>
+          <li><a href="course-1.html">Course 1</a></li>
+          <li aria-current="page">Topic 5</li>
+        </ol>
+      </nav>
+      <p class="eyebrow">Course 1 · Topic 5 of 6</p>
+      <h1>Verify captures and document gaps</h1>
+      <p class="page-meta">Reading time: about 4 minutes</p>
+    </div>
+  </section>
+
+  <div class="container page-body">
+    <div class="course-layout">
+
+      <article class="course-content">
+
+        <section class="callout callout-goal" aria-labelledby="goal">
+          <h2 id="goal" class="callout-label">In this topic</h2>
+          <p>Make a source-based review decision for each captured value, while keeping missing values, conflicting accounts, and the original AI output visible.</p>
+          <p><strong>For your project:</strong> you add a first review record and a list of unresolved issues for Course 2, without cleaning away any evidence.</p>
+        </section>
+
+        <div class="callout">
+          <span class="callout-label">Key terms</span>
+          <dl class="field-list">
+            <dt>Review decision</dt>
+            <dd>What you did with a captured value: ACCEPT it, CORRECT it from the source, or REJECT_VALUE_KEEP_GAP (reject the value but keep the information need visible).</dd>
+            <dt>Evidence status</dt>
+            <dd>What the supplied material supports, such as SUPPORTED or NOT_FOUND (see Topic 3).</dd>
+            <dt>Issue</dt>
+            <dd>Something still unresolved, such as two sources that disagree. It is recorded and passed on, not hidden.</dd>
+            <dt>Missing code</dt>
+            <dd>A short local code for why a value is empty, such as UNK (unknown) or NC (not collected), stored with a plain-language reason.</dd>
+          </dl>
+        </div>
+
+        <section class="section" aria-labelledby="what">
+          <h2 id="what">What verification is, and is not</h2>
+          <p>Verification asks whether a captured value has the meaning and support the collection specification requires. It is not a contest to prove that AI always fails.</p>
+          <ul>
+            <li>A supported value can be accepted unchanged.</li>
+            <li>An extraction error can be corrected when the source gives the correct information.</li>
+            <li>An unsupported value should be rejected, while the need for that information stays visible.</li>
+          </ul>
+          <p>For the small teaching excerpt, review every captured row and every substantive field. A general statement that “the AI was checked” is not enough.</p>
+        </section>
+
+        <section class="section" aria-labelledby="compare">
+          <h2 id="compare">Check against the source, not another answer</h2>
+          <p>Compare the output with the source, not with another fluent answer. Check:</p>
+          <ul class="checklist">
+            <li>the identifier and the requested meaning;</li>
+            <li>the value, and its unit or date format;</li>
+            <li>the source location, scope, and evidence category;</li>
+            <li>omissions: did the tool include every requested checklist item or event statement?</li>
+          </ul>
+          <p>AI can help flag differences, but make the acceptance decision from the actual material. A second AI response can suggest a check; it cannot replace looking at the source that is supposed to support the value.</p>
+        </section>
+
+        <section class="section" aria-labelledby="examples">
+          <h2 id="examples">Three worked judgments</h2>
+          <div class="table-wrap table-stack">
+            <table>
+              <caption class="visually-hidden">Worked review judgments for the three problems</caption>
+              <thead>
+                <tr><th scope="col">Situation</th><th scope="col">What to record</th><th scope="col">Why</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Problem 1: PKT-A’s cover sheet says a handoff summary is attached, but the supplied files contain only the cover sheet.</th><td data-label="What to record">NOT_FOUND for the summary item, with a note explaining the difference.</td><td data-label="Why">The summary is not in the supplied material. Do not conclude that it was never written.</td></tr>
+                <tr><th scope="row">Problem 2: an assistant adds a completed visit for PKT-B, but the log only shows a planned visit after the cutoff.</th><td data-label="What to record">Reject the invented completion date and keep the missing completion as a documented gap.</td><td data-label="Why">A planned visit is not evidence of a completed visit.</td></tr>
+                <tr><th scope="row">Problem 3: the rural coordinator’s card names the receiving scheduler as the follow-up owner; the scheduler’s card names the rural coordinator.</th><td data-label="What to record">Accept both as reported accounts and open a conflict issue.</td><td data-label="Why">Each account matches its own source. Disagreement does not make either one false, and the AI’s preferred reading is not policy.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Course 2 needs to know both the values and the unresolved relationship between them.</p>
+        </section>
+
+        <section class="section" aria-labelledby="separate">
+          <h2 id="separate">Keep three things separate</h2>
+          <p>Use separate fields for evidence status, missing reason, and review decision. A supported statement can still conflict with another supported statement, and a blank date is not zero.</p>
+          <p>The project proposes local missing codes such as UNK for unknown and NC for not collected. These are not official DDI codes. Record a plain-language reason and use the code that actually fits the gap. An expected event that is not documented may belong in the issue list rather than in an invented event row.</p>
+        </section>
+
+        <section class="section" aria-labelledby="changes">
+          <h2 id="changes">Keep the original; record every change</h2>
+          <p>Keep the original source and the AI output unchanged. In the reviewed copy, record the previous value, the replacement if the source supports one, the source location, the reviewer, and the reason for the change.</p>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>Course 1 work</h3>
+              <p>Correcting an extraction against its source.</p>
+            </div>
+            <div class="card">
+              <h3>Course 2 work</h3>
+              <p>Standardizing datasets, resolving duplicates, calculating time intervals, and deciding how tables join.</p>
+            </div>
+          </div>
+          <p>A clearly recorded unresolved issue can travel with a usable handoff. An issue that hides what a value means or where it came from must be fixed before the value is accepted.</p>
+        </section>
+
+        <section class="section" aria-labelledby="prompt">
+          <h2 id="prompt">AI instruction for this stage</h2>
+          <div class="callout callout-prompt">
+            <span class="callout-label">Prompt to adapt: check the capture</span>
+            <p>Compare the candidate capture with the supplied source text and reviewed variable definitions. Flag mismatches, omitted items, unsupported values, and conflicting accounts. For each flag, identify the row or field and exact supporting location. Suggest ACCEPT, CORRECT, or REJECT_VALUE_KEEP_GAP, but do not overwrite the original output or guess a resolution. Keep source support separate from cross-source agreement.</p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="activity">
+          <h2 id="activity">Practice activity</h2>
+          <div class="callout callout-activity">
+            <span class="callout-label">Try it: Workpad C</span>
+            <p>Record one acceptance or correction and one unresolved gap in <a href="course-1-case-materials.html#workpad-c">Workpad C</a>. Link each decision to a source location, and do not change the original output.</p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="quiz">
+          <h2 id="quiz">Check your understanding</h2>
+          <div class="quiz">
+            <p class="quiz-q">Two role cards assign receipt follow-up to different roles. Each extracted answer matches its card. What is the correct review action?</p>
+            <ol class="quiz-choices">
+              <li>Ask AI to pick the more likely role.</li>
+              <li>Accept both as reported accounts and flag the unresolved responsibility conflict.</li>
+              <li>Delete both answers.</li>
+            </ol>
+            <details class="faq-item">
+              <summary>Show the answer</summary>
+              <div class="faq-answer">
+                <p><strong>Answer: B.</strong> Whether a source supports a value and whether two sources agree are different questions. Keep the accounts, and note the clarification needed.</p>
+                <p>Choosing a likely owner (A) invents an operating rule. Deleting both (C) loses evidence. The conflict is part of the handoff, not an extraction failure.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="sources">
+          <h2 id="sources">Sources</h2>
+          <ul class="source-list">
+            <li>Case materials: synthetic packets PKT-A and PKT-B, log, and role cards, version 1 (fictional teaching material).</li>
+          </ul>
+        </section>
+
+        <nav class="pager" aria-label="Topic navigation">
+          <a class="pager-prev" href="course-1-topic-4.html"><span class="pager-label">← Previous</span><span class="pager-title">4. Collect with AI</span></a>
+          <a class="pager-next" href="course-1-topic-6.html"><span class="pager-label">Next →</span><span class="pager-title">6. Package the handoff</span></a>
+        </nav>
+
+      </article>
+
+      <aside class="course-aside" aria-label="Course information">
+        <nav class="aside-box course-list-box" aria-label="Course 1 topics">
+          <h2 class="aside-title">Course 1 topics</h2>
+          <ol class="course-list">
+            <li><a href="course-1-topic-1.html"><span class="num">1</span>Define the task</a></li>
+            <li><a href="course-1-topic-2.html"><span class="num">2</span>Identify sources and methods</a></li>
+            <li><a href="course-1-topic-3.html"><span class="num">3</span>Specify variables</a></li>
+            <li><a href="course-1-topic-4.html"><span class="num">4</span>Collect with AI</a></li>
+            <li><a href="course-1-topic-5.html" aria-current="page"><span class="num">5</span>Verify and document gaps</a></li>
+            <li><a href="course-1-topic-6.html"><span class="num">6</span>Package the handoff</a></li>
+            <li><a href="course-1-case-materials.html"><span class="num">•</span>Case materials</a></li>
+          </ol>
+          <p><a href="course-1.html">Course 1 overview</a></p>
+        </nav>
+        <div class="aside-box">
+          <h2 class="aside-title">Case materials</h2>
+          <p>The packets, log, and role cards are synthetic teaching material. The referral problem behind them comes from a published study.</p>
+          <p><a href="course-1-case-materials.html">Source cards and workpad</a></p>
+          <p><a href="course-1-files/IRHR_Course1_Workbook_v05.xlsx" download>Workbook (Excel)</a> · <a href="course-1-files/Prompts_v05.txt" download>Prompts (text)</a></p>
+        </div>
+        <div class="aside-box">
+          <h2 class="aside-title">Safety rule</h2>
+          <p>Never put real patient information into an AI tool, even with names removed.</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <p class="footer-title">IRHR–ALAAI Rural Health Transformation Challenge</p>
+        <p>Organized by the Institute for Rural Health Research and the Alabama Center for the Advancement of Artificial Intelligence at The University of Alabama.</p>
+        <p>Program contact: <span data-config-email>email address to be posted</span></p>
+      </div>
+      <div>
+        <p class="footer-heading">Participate</p>
+        <ul class="footer-links">
+          <li><a href="../about.html">The Challenge</a></li>
+          <li><a href="../apply.html">Apply</a></li>
+          <li><a href="../timeline.html">Timeline</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Learn and submit</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Short Courses</a></li>
+          <li><a href="../resources.html">Resources and Templates</a></li>
+          <li><a href="../references.html">References</a></li>
+          <li><a href="../submission.html">Submission and Judging</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Organizers</p>
+        <ul class="footer-links">
+          <li><a href="https://cchs.ua.edu/research/institute-for-rural-health/" target="_blank" rel="noopener">Institute for Rural Health Research</a></li>
+          <li><a href="https://eng.ua.edu/centers/alabama-center-for-the-advancement-of-ai/" target="_blank" rel="noopener">Alabama Center for the Advancement of Artificial Intelligence</a></li>
+          <li><a href="../team.html">Team and Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> IRHR–ALAAI Rural Health Transformation Challenge · The University of Alabama</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
