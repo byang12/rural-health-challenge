@@ -16,6 +16,9 @@
  *  Leave a value as "" (empty) until it is ready. Empty links show an
  *  "Available soon" label, and empty statements show a short placeholder note.
  *
+ *  A link can be a full web address or a path to a page on this site, such as
+ *  "templates/proposal-template.html".
+ *
  *  If a statement needs a double quotation mark ("), type it as \" instead.
  * ============================================================================
  */
@@ -35,14 +38,14 @@ window.SITE_CONFIG = {
   // The fictional practice case (Short Courses and Resources pages)
   TEACHING_CASE_URL: "",
 
-  // Improvement proposal template (Resources page)
-  PROPOSAL_TEMPLATE_URL: "",
+  // Improvement proposal template (Resources and Course 6 pages)
+  PROPOSAL_TEMPLATE_URL: "templates/proposal-template.html",
 
   // Supporting analysis guide (Resources page)
   ANALYSIS_TEMPLATE_URL: "",
 
-  // Presentation outline (Resources page)
-  PRESENTATION_TEMPLATE_URL: "",
+  // Presentation outline (Resources and Course 6 pages)
+  PRESENTATION_TEMPLATE_URL: "templates/presentation-outline.html",
 
   /* ---- Contact ---- */
 

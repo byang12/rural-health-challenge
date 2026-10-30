@@ -283,7 +283,8 @@ strong { font-weight: 700; }
   line-height: 1.35;
 }
 .sub-menu a:hover { color: var(--crimson); }
-.sub-menu a[aria-current="page"] { color: var(--crimson); font-weight: 600; }
+.sub-menu a[aria-current="page"],
+.sub-menu a[aria-current="true"] { color: var(--crimson); font-weight: 600; }
 
 /* Without JavaScript, show the full menu so every page stays reachable */
 .no-js .nav-toggle { display: none; }
@@ -1036,7 +1037,7 @@ tbody th { font-weight: 700; }
 
 /* ---------- Course pages ---------- */
 
-.course-layout { display: grid; gap: 48px; }
+.course-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; }
 @media (min-width: 960px) {
   .course-layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 56px; }
 }
@@ -1046,6 +1047,7 @@ tbody th { font-weight: 700; }
 }
 
 .course-content .grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.course-content .steps { grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
 
 .aside-box {
   margin-bottom: 20px;
@@ -1078,7 +1080,8 @@ tbody th { font-weight: 700; }
   font-size: 0.98rem;
 }
 .course-list a:hover { background: var(--white); color: var(--crimson); }
-.course-list a[aria-current="page"] { background: var(--white); color: var(--crimson); font-weight: 700; }
+.course-list a[aria-current="page"],
+.course-list a[aria-current="true"] { background: var(--white); color: var(--crimson); font-weight: 700; }
 .course-list .num {
   flex: none;
   display: grid;
@@ -1090,7 +1093,8 @@ tbody th { font-weight: 700; }
   font-size: 0.8rem;
   font-weight: 700;
 }
-.course-list a[aria-current="page"] .num { background: var(--crimson); color: var(--white); }
+.course-list a[aria-current="page"] .num,
+.course-list a[aria-current="true"] .num { background: var(--crimson); color: var(--white); }
 
 .pager {
   display: grid;
@@ -1124,6 +1128,72 @@ tbody th { font-weight: 700; }
   .pager { grid-template-columns: 1fr; }
   .pager-next { grid-column: auto; text-align: left; }
 }
+
+/* ---------- Topic readings and templates ---------- */
+
+.before-after { display: grid; gap: 16px; margin: 0 0 1.5em; max-width: 76ch; }
+@media (min-width: 720px) {
+  .before-after { grid-template-columns: 1fr 1fr; }
+}
+.before-after > div {
+  padding: 18px 20px;
+  background: var(--white);
+  border: 1px solid var(--sand-200);
+  border-top: 4px solid var(--sand-300);
+  border-radius: var(--radius);
+}
+.before-after > .after { border-top-color: var(--crimson); }
+.before-after > div > :last-child { margin-bottom: 0; }
+
+.callout-prompt {
+  background: var(--sand-50);
+  border: 1px dashed var(--sand-300);
+  border-left: 4px solid var(--ink-muted);
+}
+.callout-prompt .callout-label { color: var(--ink-muted); }
+
+.field-list { margin: 0 0 1em; }
+.field-list dt { font-weight: 700; }
+.field-list dd { margin: 0 0 0.6em; }
+.field-list dd:last-child { margin-bottom: 0; }
+
+.template-section {
+  margin: 0 0 28px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--sand-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  scroll-margin-top: 24px;
+}
+.template-section > :last-child { margin-bottom: 0; }
+.template-section h2 { font-size: 1.45rem; }
+.template-section h3 { margin-top: 1.2em; font-size: 1.1rem; }
+.template-meta { margin: -0.2em 0 1em; font-weight: 600; color: var(--ink-muted); }
+
+.fill { padding: 0 4px; background: var(--crimson-tint); border-radius: 3px; }
+
+.quiz {
+  margin: 0 0 24px;
+  padding: 20px 24px;
+  max-width: 76ch;
+  background: var(--white);
+  border: 1px solid var(--sand-200);
+  border-radius: var(--radius);
+}
+.quiz-q { font-weight: 700; }
+.quiz-choices { list-style: upper-alpha; padding-left: 1.6em; }
+.quiz .faq-item { margin: 12px 0 0; }
+.quiz .faq-item summary { padding-top: 12px; padding-bottom: 12px; font-size: 1rem; }
+
+.source-list { max-width: 76ch; font-size: 0.95rem; }
+.source-list li + li { margin-top: 0.6em; }
+
+.diagram-wrap { overflow-x: auto; margin: 0 0 1.5em; max-width: 76ch; }
+.diagram-wrap svg { display: block; min-width: 620px; width: 100%; height: auto; }
+.diagram-caption { margin-top: 6px; font-size: 0.92rem; color: var(--ink-muted); }
+
+.threshold-row > * { background: var(--crimson-tint); font-weight: 700; }
 
 /* ---------- References ---------- */
 

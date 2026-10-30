@@ -9,9 +9,23 @@
 
   var config = window.SITE_CONFIG || {};
 
+  // A link in site-config.js may be a full web address or a path inside this
+  // site, such as "templates/proposal-template.html". Paths are resolved from
+  // the site root, two folders above site-config.js, so they work on every page.
+  var configScript = document.querySelector('script[src$="site-config.js"]');
+  var siteRoot = configScript ? new URL("../../", configScript.src).href : document.baseURI;
+
   function setting(key) {
     var value = config[key];
     return typeof value === "string" ? value.trim() : "";
+  }
+
+  function siteUrl(value) {
+    try {
+      return new URL(value, siteRoot).href;
+    } catch (e) {
+      return value;
+    }
   }
 
   function each(selector, fn) {
@@ -23,7 +37,7 @@
   each("[data-config-link]", function (el) {
     var url = setting(el.getAttribute("data-config-link"));
     if (!url) return;
-    el.setAttribute("href", url);
+    el.setAttribute("href", siteUrl(url));
     el.classList.remove("is-pending");
     el.removeAttribute("aria-disabled");
     Array.prototype.forEach.call(el.querySelectorAll(".pending-note"), function (note) {
