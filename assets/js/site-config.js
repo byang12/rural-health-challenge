@@ -47,6 +47,13 @@ window.SITE_CONFIG = {
   // Presentation outline (Resources and Course 6 pages)
   PRESENTATION_TEMPLATE_URL: "templates/presentation-outline.html",
 
+  /* ---- Tutorials: where each "Start the tutorial" button goes ---- */
+
+  // A tutorial on this site uses a path; a tutorial on another website uses its full web address
+  TUTORIAL_1_URL: "https://share.minicoursegenerator.com/rural-health-data-collection-21638548/1",
+  TUTORIAL_2_URL: "courses/tutorial-2/index.html",
+  TUTORIAL_6_URL: "courses/tutorial-6/index.html",
+
   /* ---- Contact ---- */
 
   // Program coordinator email, shown on many pages and in the footer

@@ -1,0 +1,197 @@
+WEBVTT
+
+00:00:00.150 --> 00:00:01.580
+Part three.
+
+00:00:01.580 --> 00:00:04.871
+Free tools that combine health and environmental data.
+
+00:00:05.442 --> 00:00:07.252
+Here's the good news.
+
+00:00:07.252 --> 00:00:12.062
+People have already combined a lot of this data and put it online for free.
+
+00:00:12.062 --> 00:00:14.092
+You have three options.
+
+00:00:14.092 --> 00:00:15.382
+Look it up.
+
+00:00:15.382 --> 00:00:17.732
+Download a table someone else combined.
+
+00:00:17.732 --> 00:00:19.273
+Or combine it yourself.
+
+00:00:19.823 --> 00:00:22.763
+Level one: look it up.
+
+00:00:22.763 --> 00:00:28.333
+County Health Rankings and Roadmaps gives every US county its own page.
+
+00:00:28.333 --> 00:00:33.063
+Health, income, housing, and the environment appear together,
+
+00:00:33.063 --> 00:00:35.413
+with the years the data covers.
+
+00:00:35.413 --> 00:00:38.493
+Use it when you want to get to know a place fast.
+
+00:00:38.493 --> 00:00:43.558
+To access it, go to County Health Rankings dot org and search for a county.
+
+00:00:44.114 --> 00:00:49.394
+Data Commons, from Google, is like a search engine for public statistics.
+
+00:00:49.394 --> 00:00:53.514
+Type a place and a topic, and you'll see charts from many agencies,
+
+00:00:53.514 --> 00:00:55.634
+with the source listed.
+
+00:00:55.634 --> 00:00:58.073
+Use it when you don't know where a number lives.
+
+00:00:58.622 --> 00:01:01.592
+Level two: download a combined table.
+
+00:01:01.592 --> 00:01:06.382
+The Environmental Justice Index, from the CDC, ranks every census tract,
+
+00:01:06.382 --> 00:01:11.832
+which is a small area of about 4,000 people, on 36 environmental, social,
+
+00:01:11.832 --> 00:01:13.772
+and health factors.
+
+00:01:13.772 --> 00:01:17.832
+Use it when you want health and environment in one file.
+
+00:01:17.832 --> 00:01:22.567
+To access it, open the index's explorer map, or its data download page.
+
+00:01:23.122 --> 00:01:28.552
+The CDC's Environmental Public Health Tracking Network also puts air, water,
+
+00:01:28.552 --> 00:01:31.002
+and heat data beside health data.
+
+00:01:31.002 --> 00:01:34.392
+Use it to look at environment and health together.
+
+00:01:34.392 --> 00:01:36.952
+To access it, open its Data Explorer.
+
+00:01:37.501 --> 00:01:39.261
+One warning.
+
+00:01:39.261 --> 00:01:41.481
+Government websites change.
+
+00:01:41.481 --> 00:01:48.151
+On February 5, 2025, the Environmental Protection Agency took its main public map
+
+00:01:48.151 --> 00:01:52.951
+of environmental risks, called EJScreen, offline.
+
+00:01:52.951 --> 00:01:55.841
+An outside group rebuilt a copy.
+
+00:01:55.841 --> 00:01:58.467
+So download what you use, and write down the date.
+
+00:01:59.017 --> 00:02:02.007
+Level three: combine it yourself.
+
+00:02:02.007 --> 00:02:05.607
+All you need is two tables and one column they share,
+
+00:02:05.607 --> 00:02:09.497
+usually a county ID number called a FIPS code.
+
+00:02:09.497 --> 00:02:15.027
+In Excel or Google Sheets, one formula called XLOOKUP does the work.
+
+00:02:15.027 --> 00:02:19.697
+For each county in your first table, it finds the matching row in the second.
+
+00:02:19.697 --> 00:02:21.047
+Then check.
+
+00:02:21.047 --> 00:02:23.807
+Do you still have the same number of counties?
+
+00:02:23.807 --> 00:02:25.398
+Did anything come back not found?
+
+00:02:25.948 --> 00:02:28.918
+Here's a trap that catches almost everyone.
+
+00:02:28.918 --> 00:02:33.358
+Greene County's FIPS code is 01063.
+
+00:02:33.358 --> 00:02:38.028
+Open that file in a spreadsheet and the first zero can vanish.
+
+00:02:38.028 --> 00:02:39.678
+Now it matches nothing.
+
+00:02:39.678 --> 00:02:44.798
+Counties in seven states have this problem, from Alabama to Connecticut.
+
+00:02:44.798 --> 00:02:47.689
+So format that column as text before you paste.
+
+00:02:48.240 --> 00:02:51.770
+Here's a small combined table for two Alabama counties.
+
+00:02:51.770 --> 00:02:53.590
+Diabetes from one source.
+
+00:02:53.590 --> 00:02:55.760
+Fine particle pollution from another.
+
+00:02:55.760 --> 00:02:58.730
+Households with no car from a third.
+
+00:02:58.730 --> 00:03:02.770
+See the labels: the year, and whether each number comes from a survey
+
+00:03:02.770 --> 00:03:04.760
+or is calculated by a model.
+
+00:03:04.760 --> 00:03:08.360
+Without them, this is just a pile of numbers.
+
+00:03:08.360 --> 00:03:10.080
+Notice something else.
+
+00:03:10.080 --> 00:03:15.720
+Greene County has less fine particle pollution by this estimate, and more diabetes.
+
+00:03:15.720 --> 00:03:17.950
+A combined table shows a pattern.
+
+00:03:17.950 --> 00:03:19.810
+It doesn't explain it.
+
+00:03:19.810 --> 00:03:24.880
+Understanding the sewage problem in Lowndes County took lab tests, soil facts,
+
+00:03:24.880 --> 00:03:26.496
+and residents describing their homes.
+
+00:03:27.046 --> 00:03:29.046
+You don't need all of these.
+
+00:03:29.046 --> 00:03:31.306
+Pick the one that answers your question.
+
+00:03:31.306 --> 00:03:34.706
+The Field Guide lists them all, with links.
+
+00:03:34.706 --> 00:03:36.904
+Next: how AI can help.
+

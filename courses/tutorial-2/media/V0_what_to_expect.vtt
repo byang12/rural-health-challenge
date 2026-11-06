@@ -1,0 +1,122 @@
+WEBVTT
+
+00:00:00.150 --> 00:00:02.086
+Let's start with a question.
+
+00:00:02.650 --> 00:00:05.150
+Here is a county in Alabama.
+
+00:00:05.150 --> 00:00:06.590
+Greene County.
+
+00:00:06.590 --> 00:00:11.820
+Fewer than 8,000 people, spread across more than 600 square miles.
+
+00:00:11.820 --> 00:00:12.771
+Is it rural?
+
+00:00:13.321 --> 00:00:16.571
+The US Census Bureau says yes.
+
+00:00:16.571 --> 00:00:20.258
+Every resident lives in an area it classifies as rural.
+
+00:00:20.821 --> 00:00:24.441
+The federal list of metro areas says no.
+
+00:00:24.441 --> 00:00:27.441
+It counts Greene County as metropolitan,
+
+00:00:27.441 --> 00:00:30.591
+because of its commuting ties to a nearby city.
+
+00:00:30.591 --> 00:00:31.741
+Same county.
+
+00:00:31.741 --> 00:00:33.501
+Two official answers.
+
+00:00:33.501 --> 00:00:35.087
+Neither one is a mistake.
+
+00:00:35.654 --> 00:00:39.536
+One public website even states both facts, one sentence apart.
+
+00:00:40.086 --> 00:00:46.626
+Now imagine combining health records, air quality, income, and hospital data,
+
+00:00:46.626 --> 00:00:49.956
+when we can't even agree on the word rural.
+
+00:00:49.956 --> 00:00:55.226
+That is what this tutorial is about: how to organize rural health data,
+
+00:00:55.226 --> 00:00:56.646
+and how to combine it.
+
+00:00:57.211 --> 00:01:00.541
+People have worked on rural health for more than thirty years,
+
+00:01:00.541 --> 00:01:05.781
+with serious money behind them, and the gaps are still there.
+
+00:01:05.781 --> 00:01:09.011
+That's why some people call it the hard problem.
+
+00:01:09.011 --> 00:01:13.691
+It's worth your time, because the people who live there deserve better, and
+
+00:01:13.691 --> 00:01:17.831
+because a solution that works in a rural place usually improves health care
+
+00:01:17.831 --> 00:01:18.569
+everywhere.
+
+00:01:19.128 --> 00:01:21.988
+You don't need any background to start.
+
+00:01:21.988 --> 00:01:26.308
+If you code, you'll see how joining two tables perfectly can still give a wrong
+
+00:01:26.308 --> 00:01:27.688
+answer.
+
+00:01:27.688 --> 00:01:31.108
+If you know health care, you'll see what the numbers leave out.
+
+00:01:31.108 --> 00:01:32.708
+If you think about business,
+
+00:01:32.708 --> 00:01:37.098
+you'll see how weak data can lead to a bad bet on a clinic.
+
+00:01:37.098 --> 00:01:41.598
+If you know communities, you'll see who the records never reach.
+
+00:01:41.598 --> 00:01:45.998
+And if you're simply curious, you'll learn to question any number.
+
+00:01:45.998 --> 00:01:47.608
+Good teams need all of you.
+
+00:01:48.170 --> 00:01:52.470
+In about 25 minutes, we'll cover four things.
+
+00:01:52.470 --> 00:01:55.330
+Why rural data behaves differently.
+
+00:01:55.330 --> 00:01:58.650
+Five questions to ask any dataset.
+
+00:01:58.650 --> 00:02:02.020
+Free tools that combine health and environmental data.
+
+00:02:02.020 --> 00:02:05.775
+And how to use AI for this work without getting fooled.
+
+00:02:06.336 --> 00:02:12.116
+Each part has a short video, a short reading, and a quick quiz.
+
+00:02:12.116 --> 00:02:12.742
+Let's begin.
+
