@@ -1,0 +1,20 @@
+Tutorial 5 overview: AI Applications and Scenario Testing
+Tutorial 5: AI Applications and Scenario Testing
+
+Welcome to Tutorial 5: AI Applications and Scenario Testing. In the next few minutes, you'll see what this tutorial covers, why it matters, and what you'll be able to do by the end.
+
+Picture a small rural clinic. Two nurses, one front desk, and a fax machine that never stops: referrals, insurance forms, test results. Then someone says, "There's an AI tool for that." Could it help? And how would you know before you trust it?
+
+Rural health care faces hard problems. Nearly one in five Americans lives in a rural area, where there are fewer doctors and many hospitals have closed. AI could help stretch scarce staff and expertise. Used carelessly, it could also widen the gap between rural and city care.
+
+The tutorial has five short sections. Each one has a video like this, a short reading, and a quiz to check your understanding.
+
+Section one explains what AI is. It learns patterns from examples, then predicts or creates, and it comes with four warning signs. Section two shows what makes rural health care different, and why those differences matter for technology.
+
+Section three looks at where AI in rural health stands today. Rural hospitals use it less and check it less, and many tools were built with patients from somewhere else. That's why this tutorial is about scenario testing: trying a tool on realistic local situations, including messy ones, before anyone relies on it.
+
+Section four covers data: which data are safe to use with AI, and which never are, like real patient records. Section five is hands-on. Even if you've never used an AI assistant, you'll get started with the free version of Gemini, Google's AI assistant, and practice four habits: ask clearly, check the answer, protect privacy, and test before you trust.
+
+By the end, you'll be able to explain what AI can and can't do, describe the rural picture, and use an AI tool with good judgment. No coding, and no background in health or computing, is needed.
+
+Let's begin with section one.

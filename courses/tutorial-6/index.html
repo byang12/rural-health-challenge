@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Evidence Based Recommendations and Communication</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<title>Tutorial 6: Evidence Based Recommendations and Communication</title>
+<meta name="description" content="A short tutorial with examples from Alabama: how to write a rural health recommendation that the people who decide can understand, trust, and act on.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A5CEB'/%3E%3Cpath d='M14 32 L32 17 L50 32 V50 H14 Z' fill='%23fff'/%3E%3Cpath d='M29 30 h6 v5 h5 v6 h-5 v5 h-6 v-5 h-5 v-6 h5 Z' fill='%230A5CEB'/%3E%3C/svg%3E">
 <script>
 /*
   VIDEO LINKS. To add a video, paste its link between the quotes on its line, then save this file.
-  A line left empty keeps its placeholder.
+  A line left empty shows a "Video coming soon" note, with the video text open below it.
 
   You can paste any of these:
     A YouTube link:    https://youtu.be/abc123
@@ -25,8 +26,7 @@ var COURSE_VIDEOS = {
   C06_P02: '', /* Part 2: One finding, four people */
   C06_P03: '', /* Part 3: Three kinds of evidence */
   C06_P04: '', /* Part 4: From weak to useful */
-  C06_P05: '', /* Part 5: Useful, but check it */
-  C06_P06: ''  /* Finish: Closing message (optional) */
+  C06_P05: ''  /* Part 5: Useful, but check it */
 };
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -269,29 +269,25 @@ h1:focus { outline: none; }
 .rows li + li { border-top: 1px solid var(--line); }
 .rows .min { font-size: 0.875rem; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
-/* Video placeholder */
+/* Video. Until a link is added to COURSE_VIDEOS, a short "coming soon" card shows and the video text below it is open. With a link, the script puts a player in the card's place. */
 .video {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  max-width: 100%;
-  background: var(--video-bg);
-  color: var(--video-fg);
-  border-radius: 10px;
-  outline: 2px dashed var(--video-muted);
-  outline-offset: -10px;
   display: grid;
-  place-content: center;
-  justify-items: center;
-  gap: 0.35rem;
-  padding: 1.5rem;
-  text-align: center;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 1rem;
+  row-gap: 0.15rem;
+  align-items: center;
+  background: var(--side);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
 }
-.play { width: 3.25rem; height: 3.25rem; border-radius: 50%; border: 2px solid var(--video-fg); display: grid; place-items: center; margin-bottom: 0.25rem; }
-.play::before { content: ""; margin-left: 0.25rem; border-left: 1rem solid var(--video-fg); border-top: 0.6rem solid transparent; border-bottom: 0.6rem solid transparent; }
-.vlabel { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--video-muted); }
-.vtitle { font-size: 1.25rem; font-weight: 600; line-height: 1.3; }
-.vplan { font-size: 0.9375rem; line-height: 1.4; color: var(--video-muted); max-width: 30rem; }
-.vfile { font-size: 0.8125rem; line-height: 1.4; color: var(--video-muted); font-variant-numeric: tabular-nums; }
+.video > p { grid-column: 2; }
+.play { grid-row: span 3; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 2px solid var(--muted); display: grid; place-items: center; }
+.play::before { content: ""; margin-left: 0.2rem; border-left: 0.8rem solid var(--muted); border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; }
+.vlabel { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.vtitle { font-size: 1.125rem; font-weight: 600; line-height: 1.3; color: var(--fg); }
+.vplan { font-size: 0.9375rem; line-height: 1.4; color: var(--muted); }
+.vfile { font-size: 0.875rem; line-height: 1.4; color: var(--warn); }
 .video-frame { aspect-ratio: 16 / 9; width: 100%; max-width: 100%; background: var(--video-bg); border-radius: 10px; overflow: hidden; }
 .video-frame iframe, .video-frame video { display: block; width: 100%; height: 100%; border: 0; }
 
@@ -399,8 +395,8 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
   .c5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .c5 > *, .c5 > :nth-child(n+4) { grid-column: auto; }
   .c5 > :last-child { grid-column: 1 / -1; }
-  .play { display: none; }
-  .video { padding: 1.25rem; }
+  .play { width: 2.25rem; height: 2.25rem; }
+  .video { column-gap: 0.85rem; padding: 0.9rem 1rem; }
   .vtitle { font-size: 1.0625rem; }
   .vplan { font-size: 0.875rem; }
   .yn-row { grid-template-columns: minmax(0, 1fr); }
@@ -410,6 +406,8 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
   .side, .bar span { transition: none; }
 }
 </style>
+</head>
+<body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="pine" viewBox="0 0 40 90"><path d="M20 0 L33 30 H26 L37 58 H27 L40 84 H22 V90 H18 V84 H0 L13 58 H3 L14 30 H7 Z"/></symbol>
@@ -464,10 +462,6 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
 </svg>
 
 <div id="cover">
-  <div class="note" role="note">
-    <div class="gut"><strong>Draft for team review.</strong> Videos are placeholders. Still to check by hand: Greene County broadband (67.0%), and the AHRQ and HHS links, which block automatic checks.</div>
-  </div>
-
   <header class="hero">
     <div class="hero-text gut">
       <p class="eyebrow">Rural Health Tutorial Series · Tutorial 6 of 6</p>
@@ -538,7 +532,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
 
   <footer class="foot">
     <div class="gut">
-      <p>Rural Health Tutorial Series · Tutorial 6 draft · Facts and links checked November 3–4, 2026.</p>
+      <p>Rural Health Tutorial Series · Tutorial 6 · Facts and links checked November 2026.</p>
       <p>Examples marked “made-up” are for teaching only. Your place is kept in this browser only. Nothing you type is saved or sent.</p>
     </div>
   </footer>
@@ -575,9 +569,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="module" data-num="Start here" data-title="Start here" data-min="2">
         <section class="screen" id="start-watch" data-step="Watch" data-label="What this tutorial is about" hidden>
           <div class="body">
-            <div class="video" data-video="C06_P00" role="img" aria-label="Video placeholder: What this tutorial is about, about 2 minutes">
+            <div class="video" data-video="C06_P00">
               <div class="play" aria-hidden="true"></div>
-              <p class="vlabel">Video placeholder · 2 minutes</p>
+              <p class="vlabel">Video coming soon · 2 minutes</p>
               <p class="vtitle">What this tutorial is about</p>
               <p class="vplan">Real Alabama numbers, and the five parts ahead.</p>
             </div>
@@ -585,7 +579,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
               <summary>Read the video text</summary>
               <div class="inside">
                 <p>Imagine that you have a good idea for a small clinic in rural Alabama. It could save staff time, or help patients get the care they need. But an idea only helps if the people who decide understand it, trust it, and can act on it. This tutorial is about that last step.</p>
-                <p>Rural health care in Alabama is hard work. More than two million Alabamians live in rural areas. Since 2005, nine rural hospitals in the state have closed or stopped overnight care. In 1980, hospitals in forty-five rural counties delivered babies. In 2025, only fifteen did. Many clinics have few staff and small budgets. That is why a good recommendation matters.</p>
+                <p>Rural health care in Alabama is hard work. More than two million Alabamians live in rural areas. Since 2005, nine rural hospitals in the state have closed or stopped overnight care. In 1980, hospitals in forty-five rural counties delivered babies. On the state’s 2025 map, only fifteen did. Many clinics have few staff and small budgets. That is why a good recommendation matters.</p>
                 <p>This tutorial has five short parts. First, you will see why a rural recommendation is different. Second, you will learn who needs to hear it. Third, you will check how far you can trust your evidence. Fourth, you will write a recommendation that a provider can act on. Fifth, you will see how AI can help, and where people must decide.</p>
                 <p>You do not need a technical background. Each part has a short video, a few lines to read, and quick questions. There are no grades. Go at your own speed, and repeat anything you want. Let us begin with a simple question. What makes a rural recommendation different?</p>
               </div>
@@ -610,9 +604,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="module" data-num="Part 1" data-title="Why is a rural recommendation different?" data-min="7">
         <section class="screen" id="p1-watch" data-step="Watch" data-label="One Monday at a rural clinic" hidden>
           <div class="body">
-            <div class="video" data-video="C06_P01" role="img" aria-label="Video placeholder: One Monday at a rural clinic, about 2.5 minutes">
+            <div class="video" data-video="C06_P01">
               <div class="play" aria-hidden="true"></div>
-              <p class="vlabel">Video placeholder · 2.5 minutes</p>
+              <p class="vlabel">Video coming soon · 2.5 minutes</p>
               <p class="vtitle">One Monday at a rural clinic</p>
               <p class="vplan">A made-up clinic manager receives a 20-page report.</p>
             </div>
@@ -727,9 +721,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="module" data-num="Part 2" data-title="Who needs to hear it?" data-min="7">
         <section class="screen" id="p2-watch" data-step="Watch" data-label="One finding, four people" hidden>
           <div class="body">
-            <div class="video" data-video="C06_P02" role="img" aria-label="Video placeholder: One finding, four people, about 2 minutes">
+            <div class="video" data-video="C06_P02">
               <div class="play" aria-hidden="true"></div>
-              <p class="vlabel">Video placeholder · 2 minutes</p>
+              <p class="vlabel">Video coming soon · 2 minutes</p>
               <p class="vtitle">One finding, four people</p>
               <p class="vplan">The same made-up finding told to four different people.</p>
             </div>
@@ -868,9 +862,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="module" data-num="Part 3" data-title="What evidence can you trust, and how far?" data-min="9">
         <section class="screen" id="p3-watch" data-step="Watch" data-label="Three kinds of evidence" hidden>
           <div class="body">
-            <div class="video" data-video="C06_P03" role="img" aria-label="Video placeholder: Three kinds of evidence, about 2.5 minutes">
+            <div class="video" data-video="C06_P03">
               <div class="play" aria-hidden="true"></div>
-              <p class="vlabel">Video placeholder · 2.5 minutes</p>
+              <p class="vlabel">Video coming soon · 2.5 minutes</p>
               <p class="vtitle">Three kinds of evidence</p>
               <p class="vplan">Real public data and a real Alabama program, shown on their own websites.</p>
             </div>
@@ -879,10 +873,10 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
               <div class="inside">
                 <p>How far can you trust your evidence? It depends on the kind of evidence. Let us look at three kinds, using real examples from Alabama.</p>
                 <p>First, public data. This is CDC PLACES, a free source of health estimates for every county. CDC is the national public health agency. It estimates that twenty-seven percent of adults in Greene County have diagnosed diabetes. In Tuscaloosa County, it is twelve percent. This is useful. It shows a difference between counties. But it does not tell you how many patients one clinic sees. Public data describes a county, not a clinic.</p>
-                <p>Second, programs from other places. This is the Rural Health Information Hub, or RHIhub. Open Models and Innovations, and choose Transportation. Here is Kid One Transport, a real program in Alabama. It gives rides to medical visits for children and pregnant women. Its page reports a survey of families. Many said their children visited the emergency room less often. That is useful. But families reported this themselves, and the page does not describe a comparison group. So we say “families reported.” We do not say “the rides caused it.”</p>
+                <p>Second, programs from other places. This is the Rural Health Information Hub, or RHIhub. Its Models and Innovations section lists rural programs by topic. Under Transportation, we find Kid One Transport, a real program in Alabama. It gives rides to medical visits for children and pregnant women. Its page shares results that families reported. Many reported fewer emergency room visits. That is useful. But families reported this themselves, and the page does not describe a comparison group. So we say “families reported.” We do not say “the rides caused it.”</p>
                 <p>Before you use a program, ask three questions. Was it tried in a rural place? Did it need money or staff that your clinic does not have? Did it serve people like yours? Kid One uses about twenty vehicles and trained drivers. A small clinic could not run this alone, but it could work with a program like it.</p>
                 <p>Third, local evidence. A manager tells you, “We follow up on every referral.” That is useful, but it is only what someone said. Ask staff to show you a recent example, with no patient names. Seeing the work is stronger than hearing about it. A document is useful too, but a written rule does not prove that people follow it.</p>
-                <p>So say how you know. Then try the questions below.</p>
+                <p>So say how you know. Now read a few lines, and try the questions.</p>
               </div>
             </details>
           </div>
@@ -1002,9 +996,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="module" data-num="Part 4" data-title="How do you write a recommendation a provider can act on?" data-min="9">
         <section class="screen" id="p4-watch" data-step="Watch" data-label="From weak to useful" hidden>
           <div class="body">
-            <div class="video" data-video="C06_P04" role="img" aria-label="Video placeholder: From weak to useful, about 2.5 minutes">
+            <div class="video" data-video="C06_P04">
               <div class="play" aria-hidden="true"></div>
-              <p class="vlabel">Video placeholder · 2.5 minutes</p>
+              <p class="vlabel">Video coming soon · 2.5 minutes</p>
               <p class="vtitle">From weak to useful</p>
               <p class="vplan">A weak recommendation is fixed in four steps, then checked with a listener.</p>
             </div>
@@ -1016,7 +1010,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
                 <p>Step two. Say what you know, and what you do not know. “Staff told us that referrals get lost, but we have not measured how often.” This is honest, and it builds trust.</p>
                 <p>Step three. Show the cost. The weak version said it would save money. But this change adds staff time. So we write: “This adds about ten minutes of staff time, twice a week. That is our estimate. We do not know yet whether it saves money.” Also ask what could get worse. Does the work just move to someone else?</p>
                 <p>Step four. Give a small next step. Who does it, by when, and how will you know it worked? “The manager reviews the count each month. After two months, the manager decides whether to continue.” Also ask who will keep it going after that.</p>
-                <p>Now check your words. Read it to someone outside your field. Ask them to explain it back. “So one person checks a list of referrals twice a week, for two months, and then you decide if it helped?” “Yes. That is it.” If they can explain it in their own words, your message is clear. If they cannot, change it.</p>
+                <p>Now check your words. Read it to someone outside your field. Ask them to explain it back. A listener might say: “So one person checks a list of referrals twice a week, for two months, and then you decide if it helped?” If they can explain it in their own words, your message is clear. If they cannot, change it.</p>
               </div>
             </details>
           </div>
@@ -1134,9 +1128,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="module" data-num="Part 5" data-title="How can AI help, and where must people decide?" data-min="7">
         <section class="screen" id="p5-watch" data-step="Watch" data-label="Useful, but check it" hidden>
           <div class="body">
-            <div class="video" data-video="C06_P05" role="img" aria-label="Video placeholder: Useful, but check it, about 2 minutes">
+            <div class="video" data-video="C06_P05">
               <div class="play" aria-hidden="true"></div>
-              <p class="vlabel">Video placeholder · 2 minutes</p>
+              <p class="vlabel">Video coming soon · 2 minutes</p>
               <p class="vtitle">Useful, but check it</p>
               <p class="vplan">A made-up example of AI making a sentence clearer, and adding a false number.</p>
             </div>
@@ -1147,7 +1141,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
                 <p>AI is good at three jobs. It can turn rough notes into a first draft. It can rewrite hard text in plain English. And it can act as a tough reader, and ask you hard questions.</p>
                 <p>Here is a hard sentence. “Interoperability constraints impede closed-loop referral tracking.” We ask AI to rewrite it for a busy clinic manager. Now it says: “Our computer systems do not connect, so we cannot easily see if a referral was completed.” That is much clearer. But look at the next sentence. “This will save the clinic forty thousand dollars a year.” We never said that. We have no source for it. AI can invent facts that sound true. This example is made up, but this problem is real.</p>
                 <p>So follow three rules. One. Check every number and every source. If you cannot find a source, remove it. Two. Protect private information. Never paste patient information, or a clinic’s computer security details, into a public AI tool. Three. Say how you used AI, and how you checked it.</p>
-                <p>AI can draft, organize, and compare. But people decide. AI should not make medical decisions, and it should not choose for a provider. You are responsible for every sentence you use. Now try the questions below. You can also copy three useful prompts.</p>
+                <p>AI can draft, organize, and compare. But people decide. AI should not make medical decisions, and it should not choose for a provider. You are responsible for every sentence you use. Now read a few lines, and try the questions. You can also copy three useful prompts.</p>
               </div>
             </details>
           </div>
@@ -1328,19 +1322,11 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
           </div>
         </section>
 
-        <section class="screen" id="finish-end" data-step="Watch" data-label="Closing message" hidden>
+        <section class="screen" id="finish-end" data-label="Closing message" hidden>
           <div class="body">
-            <div class="video" data-video="C06_P06" role="img" aria-label="Video placeholder: Closing message, about 1 minute, optional">
-              <div class="play" aria-hidden="true"></div>
-              <p class="vlabel">Video placeholder · 1 minute · Optional</p>
-              <p class="vtitle">Listen. Tell the truth. Suggest a small first step.</p>
-            </div>
-            <details class="more">
-              <summary>Read the video text</summary>
-              <div class="inside">
-                <p>You have reached the end of the tutorial series. Here is one last idea. A recommendation is the start of a conversation with a community. Rural clinics in Alabama have heard many promises. They remember the people who listened, told the truth about what they knew, and suggested a first step small enough to try. Use the sources on this page whenever you need them. If this work interests you, please keep going. Rural Alabama needs people who can listen, use evidence well, and explain ideas clearly.</p>
-              </div>
-            </details>
+            <h2>Listen. Tell the truth. Suggest a small first step.</h2>
+            <p class="lead">You have reached the end of the tutorial series. Here is one last idea. A recommendation is the start of a conversation with a community. Rural clinics in Alabama have heard many promises. They remember the people who listened, told the truth about what they knew, and suggested a first step small enough to try.</p>
+            <p class="lead">Use the sources on this page whenever you need them. If this work interests you, please keep going. Rural Alabama needs people who can listen, use evidence well, and explain ideas clearly.</p>
             <div class="card">
               <h2>In the challenge?</h2>
               <p>The challenge judges will read your proposal and watch your presentation. Write as if the leader of a rural clinic will read your work. The templates are on the Resources and Templates page.</p>
@@ -1588,10 +1574,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       var key = box.getAttribute('data-video');
       var link = String(links[key] || '').trim();
       if (!link) {
-        var name = document.createElement('p');
-        name.className = 'vfile';
-        name.textContent = 'File name: ' + key + '_Video';
-        box.appendChild(name);
+        /* No video yet: open the video text so the screen still teaches. */
+        var more = box.nextElementSibling;
+        if (more && more.matches('details.more')) { more.open = true; }
         return;
       }
       var player = makePlayer(link, box.querySelector('.vtitle').textContent);
@@ -1762,5 +1747,5 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
   render(byId[startId] ? startId : null);
 })();
 </script>
-
+</body>
 </html>

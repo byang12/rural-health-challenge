@@ -52,6 +52,9 @@ window.SITE_CONFIG = {
   // A tutorial on this site uses a path; a tutorial on another website uses its full web address
   TUTORIAL_1_URL: "https://share.minicoursegenerator.com/rural-health-data-collection-21638548/1",
   TUTORIAL_2_URL: "courses/tutorial-2/index.html",
+  TUTORIAL_3_URL: "courses/tutorial-3/index.html",
+  TUTORIAL_4_URL: "courses/tutorial-4/index.html",
+  TUTORIAL_5_URL: "courses/tutorial-5/index.html",
   TUTORIAL_6_URL: "courses/tutorial-6/index.html",
 
   /* ---- Contact ---- */

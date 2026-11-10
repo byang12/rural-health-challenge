@@ -1,0 +1,24 @@
+Section 1: What AI is, and what it does in health care
+Tutorial 5: AI Applications and Scenario Testing
+
+What is AI, and what does it do in health care? Let's cover the core idea, how hospitals use it, and four warning signs.
+
+Most AI isn't programmed rule by rule. It learns patterns from examples. A spam filter studies thousands of emails marked spam or not spam, then makes a guess about each new one.
+
+AI tools mostly do one of two jobs. Predictive AI sorts, scores, or flags. Generative AI creates new content, like text or images. Chat tools such as ChatGPT and Gemini are generative AI.
+
+Prediction tools are already common in hospitals. In 2023, about two in three U.S. hospitals used AI or other prediction tools in their electronic health records, most often to flag patients who might get worse, or who need follow-up care.
+
+Some tools read medical images. In 2018, the FDA authorized an AI system that checks eye photos for diabetes-related eye disease in primary care offices, with no eye specialist needed to read the photos.
+
+Generative AI is newer. It can draft clinical notes, or replies to patient messages, for a person to review. In 2024, about one in three U.S. hospitals reported using it.
+
+Now, four warning signs. One: the data it learned from may not fit your patients. A tool built in one kind of hospital can lose accuracy in another, with different people, equipment, or records.
+
+Two: it can aim at the wrong target. A widely used tool picked patients for extra care by predicting costs, not health. Less was spent on equally sick Black patients, so it passed over many of them. Researchers estimated that without this bias, Black patients' share of those picked would have risen from about 18 to 47 percent.
+
+Three: it can make things up, and still sound sure. In a 2023 study, more than half the references from an early version of ChatGPT were fake. A newer version still invented almost one in five.
+
+Four: people tend to over-trust it. In a review of studies, wrong advice from a computer tool made wrong decisions about 26 percent more likely than with no tool at all. So a trained person must check it, and make the call.
+
+So: AI learns patterns from examples, then predicts or creates. It's useful, and it has limits. Next: what makes rural health care different, and why that matters for AI.

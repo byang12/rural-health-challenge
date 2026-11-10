@@ -1,0 +1,20 @@
+Section 3: AI in rural health: today, tomorrow, and how it can help
+Tutorial 5: AI Applications and Scenario Testing
+
+Where does AI in rural health stand today, where is it heading, and how can it actually help? Let's start with today.
+
+In 2023, about half of rural hospitals used AI or other prediction tools, compared with about four in five urban hospitals. Rural hospitals were also less likely to check those tools for accuracy or bias, and 16 percent of rural respondents didn't know whether their hospital used them at all.
+
+Many tools are also built with patients from somewhere else. In one review of medical-imaging AI, most studies used patients from California, Massachusetts, or New York. No patient groups at all could be traced to thirty-four states, including Alabama.
+
+And a tool that works well in testing can still struggle in a real clinic. When an eye-screening AI was used in clinics in Thailand, about one in five photos was rejected as too poor to grade, often because of lighting. On slow internet, some uploads took a minute or more, so fewer patients were screened.
+
+Tomorrow is arriving fast. In 2024, about one in four rural hospitals already used generative AI in their health records, compared with about one in three urban hospitals. More than half of rural hospitals had no plans to start within the next year, so the gap could grow.
+
+So where can AI help most? Three places: less paperwork, like sorting referrals or preparing insurance claims; expertise closer to home, like eye screening in a primary care office; and better planning, like spotting patients who need follow-up.
+
+But good tools don't always stick. Research on health technology found that when a program is complex in many ways at once, for patients, for staff, and for the organization, it rarely, if ever, becomes part of everyday care.
+
+That's why local testing comes first. We call it scenario testing. Pick realistic local cases, including messy ones. Decide what a good result looks like. Run the tool quietly, before anyone relies on it. And keep checking after it goes live.
+
+AI can help rural care, but only if it's tested where it will be used. Next: which data you can safely use with AI.

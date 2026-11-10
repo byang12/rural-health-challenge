@@ -1,0 +1,22 @@
+Section 5: Getting started with AI tools: hands-on with Gemini
+Tutorial 5: AI Applications and Scenario Testing
+
+Never used an AI chat tool? This section is for you. You'll learn what these tools are, how to get started with Gemini, and four habits for using any AI tool safely.
+
+An AI assistant is a chat tool. You type a request in everyday words, and it writes a reply. It works by predicting likely words, which is why it can sound sure, and still be wrong.
+
+Several assistants have free versions: Gemini from Google, ChatGPT from OpenAI, Microsoft Copilot, and Claude from Anthropic. There are also research tools that show their sources, and notebook tools that answer from documents you upload. The basic skills carry over from one to the next.
+
+We'll practice with Gemini. It has a free version, runs in a web browser, and works with a regular Google account. Go to gemini.google.com and sign in. The reading walks you through every step, including age rules and privacy settings. You don't need to pay, or sign up for a student offer.
+
+Habit one: ask clearly. Say what you want, give the background, and describe the answer you need. Compare "Tell me about rural hospitals" with "In five sentences, explain what a critical access hospital is, for a first-year college student."
+
+Habit two: check the answer. If the reply lists sources, open them. Confirm key facts, numbers, and names with a trusted website, such as a government or university page. If you can't find a source, treat the claim as unverified.
+
+Habit three: protect privacy. Never paste real patient information, passwords, or confidential files. On a personal account, some chats are read by human reviewers. In Gemini's activity settings, you can stop saving new chats to your activity, and delete past chats.
+
+Habit four: test before you trust. Before relying on a tool for a task, try it on a few realistic examples, including messy ones, and compare its answers with the right ones. That's scenario testing, in its simplest form.
+
+In the reading, you'll practice all four habits with short tasks set in a fictional rural clinic. If you can't, or don't want to, create an account, you can follow along with the examples in the reading instead.
+
+Ask clearly, check the answer, protect privacy, and test before you trust. AI can save you time, but you stay in charge. That wraps up the videos for Tutorial 5. Now, on to the practice tasks.

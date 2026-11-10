@@ -1,0 +1,172 @@
+1
+00:00:00,900 --> 00:00:04,799
+Rural health care isn't simply
+city health care with fewer people.
+
+2
+00:00:04,799 --> 00:00:08,348
+In this section, we'll look at
+five differences that matter,
+
+3
+00:00:08,348 --> 00:00:10,610
+and what each one means for AI.
+
+4
+00:00:11,210 --> 00:00:14,436
+By one common count,
+about 56 million Americans,
+
+5
+00:00:14,436 --> 00:00:17,135
+nearly one in five, live in rural areas.
+
+6
+00:00:17,135 --> 00:00:21,546
+On average, rural communities have
+higher death rates from trauma,
+
+7
+00:00:21,546 --> 00:00:24,250
+stroke, and cancer than cities do.
+
+8
+00:00:24,850 --> 00:00:27,546
+First, fewer clinicians and longer trips.
+
+9
+00:00:27,546 --> 00:00:31,525
+Rural areas are short of both
+family doctors and specialists.
+
+10
+00:00:31,525 --> 00:00:36,724
+And rural Americans live, on average,
+about ten miles from the nearest hospital,
+
+11
+00:00:36,724 --> 00:00:39,820
+compared with about four miles in cities.
+
+12
+00:00:40,420 --> 00:00:42,744
+Second, hospitals under pressure.
+
+13
+00:00:42,744 --> 00:00:46,231
+Since 2005, nearly 200
+rural hospitals have closed
+
+14
+00:00:46,231 --> 00:00:48,691
+or stopped offering inpatient care.
+
+15
+00:00:48,691 --> 00:00:54,150
+Each closure can mean longer trips in
+an emergency, and fewer local jobs.
+
+16
+00:00:54,750 --> 00:00:56,618
+Third, little technical help.
+
+17
+00:00:56,618 --> 00:01:00,292
+A small rural hospital may not
+have a dedicated IT leader.
+
+18
+00:01:00,292 --> 00:01:04,464
+And rural hospitals rely more
+heavily than urban ones on the tools
+
+19
+00:01:04,464 --> 00:01:08,600
+that come built into their
+electronic health record system.
+
+20
+00:01:09,200 --> 00:01:11,692
+Fourth, weaker digital infrastructure.
+
+21
+00:01:11,692 --> 00:01:15,333
+Many rural areas still lag
+behind in broadband internet.
+
+22
+00:01:15,333 --> 00:01:19,422
+A tool that needs a fast connection
+to the cloud can slow down,
+
+23
+00:01:19,422 --> 00:01:22,250
+or stop working, at the worst moment.
+
+24
+00:01:22,850 --> 00:01:24,231
+Fifth, small numbers.
+
+25
+00:01:24,231 --> 00:01:28,878
+A rural clinic may see only a handful
+of patients with a given condition.
+
+26
+00:01:28,878 --> 00:01:32,143
+That makes it hard to build
+a tool from local data,
+
+27
+00:01:32,143 --> 00:01:36,790
+or to check whether a tool works there.
+In a review of rural AI research,
+
+28
+00:01:36,790 --> 00:01:41,020
+half the studies named a lack
+of reliable data as a problem.
+
+29
+00:01:41,620 --> 00:01:45,376
+Rural communities also have real
+strengths: close relationships,
+
+30
+00:01:45,376 --> 00:01:48,669
+local knowledge,
+and staff who know their patients well.
+
+31
+00:01:48,669 --> 00:01:52,940
+Good technology should build on
+those strengths, not replace them.
+
+32
+00:01:53,540 --> 00:01:56,479
+Put together,
+a tool that works well in a large
+
+33
+00:01:56,479 --> 00:01:59,417
+city hospital may not
+fit a small rural clinic.
+
+34
+00:01:59,417 --> 00:02:02,111
+It may need fast internet,
+technical staff,
+
+35
+00:02:02,111 --> 00:02:04,960
+or data the clinic simply doesn't have.
+
+36
+00:02:05,560 --> 00:02:10,238
+So before asking whether an AI tool is
+good, ask whether it fits the place.
+
+37
+00:02:10,238 --> 00:02:14,270
+Next, we'll look at where AI
+in rural health stands today.
