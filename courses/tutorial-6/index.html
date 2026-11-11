@@ -351,6 +351,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
 .build label { display: grid; gap: 0.3rem; font-weight: 600; }
 .build textarea { font: inherit; font-weight: 400; line-height: 1.45; color: var(--fg); background: var(--bg); border: 1px solid var(--muted); border-radius: 8px; padding: 0.55rem 0.75rem; width: 100%; resize: vertical; }
 .preview { background: var(--side); border-radius: 10px; padding: 0.9rem 1.1rem; display: grid; gap: 0.3rem; }
+.plan-list { list-style: decimal; padding-left: 1.4rem; display: grid; gap: 0.35rem; }
 .btn { font: inherit; font-size: 0.9375rem; font-weight: 600; color: var(--accent); background: var(--bg); border: 1px solid var(--accent); border-radius: 8px; padding: 0.35rem 0.85rem; cursor: pointer; justify-self: start; }
 .btn:hover { background: var(--accent-tint); }
 .prompts { display: grid; gap: 0.75rem; }
@@ -515,7 +516,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
         <li class="card"><h3>Explain</h3><p>How few staff, small budgets, work across organizations, and trust change a rural recommendation.</p></li>
         <li class="card"><h3>Name</h3><p>Who decides, who does the work, who is at the other end of a referral, and who is affected.</p></li>
         <li class="card"><h3>Check</h3><p>How far you can trust your evidence, and how to say how you know.</p></li>
-        <li class="card"><h3>Write</h3><p>A three-sentence recommendation that a provider could act on, using AI safely.</p></li>
+        <li class="card"><h3>Write</h3><p>A short recommendation that a provider could act on, using AI safely.</p></li>
       </ul>
     </section>
 
@@ -628,11 +629,11 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
         <section class="screen" id="p1-read" data-step="Read" data-label="What makes it harder" hidden>
           <div class="body">
             <div class="body" data-read>
-              <p class="lead">A recommendation asks people to change their work. Four things make this harder in rural Alabama.</p>
+              <p class="lead">A recommendation asks people to change their work. Rural towns have strengths, like trusted local people and groups. But four things make change harder.</p>
               <div class="cards c2">
-                <div class="card"><h2>Few staff.</h2><p>One person may do three jobs. There is little time to read or train.</p></div>
-                <div class="card"><h2>Small budgets.</h2><p>Even a small new cost may not be possible.</p></div>
-                <div class="card"><h2>Work crosses organizations.</h2><p>A referral may go to a hospital in another county, by phone or fax.</p></div>
+                <div class="card"><h2>Few staff.</h2><p>One person may do three jobs, with little time to read or train.</p></div>
+                <div class="card"><h2>Small budgets.</h2><p>Even a small new cost may be impossible.</p></div>
+                <div class="card"><h2>Work crosses organizations.</h2><p>A referral may go by fax to a hospital in another county.</p></div>
                 <div class="card"><h2>Trust takes time.</h2><p>People remember programs that came and left.</p></div>
               </div>
             </div>
@@ -644,7 +645,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
                   <div><dt>Referral</dt><dd>Sending a patient to another provider, such as a specialist.</dd></div>
                   <div><dt>County</dt><dd>A local area of government inside a state. Alabama has 67.</dd></div>
                   <div><dt>Fax</dt><dd>A machine that sends paper documents over a phone line.</dd></div>
-                  <div><dt>Broadband</dt><dd>Fast internet service at home.</dd></div>
+                  <div><dt>Broadband</dt><dd>Fast internet service, such as cable, fiber, satellite, or a phone data plan.</dd></div>
                 </dl>
               </div>
             </details>
@@ -669,20 +670,20 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
           <div class="body">
             <div class="q">
               <p class="stem"><span class="q-num">Question 2 of 2</span>About two out of three households in Greene County, Alabama, have a broadband subscription. A team plans a new service with online sign-up only. What is the problem?</p>
-              <p class="src">Source: U.S. Census estimate, 2020–2024 (67.0%).</p>
+              <p class="src">Source: U.S. Census estimate, 2020–2024 (67.0%). It counts any kind of broadband, including a phone data plan.</p>
               <div class="opts">
-                <button type="button" class="opt" data-ok="0" data-fb="Online sign-up works for many people. The problem is the people it leaves out."><span>Online sign-up is always a bad idea.</span></button>
-                <button type="button" class="opt" data-ok="1" data-fb="About one household in three may not be able to use it. A phone option would help."><span>Many households may not be able to use it. Add a phone option.</span></button>
-                <button type="button" class="opt" data-ok="0" data-fb="Look at the number again. About one household in three has no subscription."><span>There is no problem.</span></button>
+                <button type="button" class="opt" data-ok="0" data-fb="Online sign-up works for many people. The problem is the people it may leave out."><span>Online sign-up is always a bad idea.</span></button>
+                <button type="button" class="opt" data-ok="1" data-fb="The number is a warning sign, not proof. Some people get online another way, such as at a library. Ask before you decide."><span>It may leave some households out. Ask local people what would work, such as a phone option.</span></button>
+                <button type="button" class="opt" data-ok="0" data-fb="Look at the number again. About one household in three has no broadband subscription."><span>There is no problem.</span></button>
               </div>
               <p class="fb" aria-live="polite" hidden></p>
             </div>
           </div>
         </section>
 
-        <section class="screen" id="p1-think" data-step="Think" data-label="Who would need to agree?" hidden>
+        <section class="screen" id="p1-think" data-step="Think" data-label="What works, and who must agree?" hidden>
           <div class="body">
-            <p class="think-card">Think of a small town you know, or look one up. Who would need to agree to change how its clinic works?</p>
+            <p class="think-card">Think of a small town you know, or look one up. What already works there, and who already helps? Who would need to agree to change how its clinic works?</p>
           </div>
         </section>
 
@@ -733,9 +734,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
                 <p>A student team has one finding. At a small clinic, nobody tracks a referral after it is sent. Some patients never see the specialist. This example is made up. Let us share this one finding with four different people.</p>
                 <p>First, the clinic manager. The manager decides. The manager asks: what does it cost, and what could go wrong? So the team says: “We suggest a two-month test. One staff member keeps a simple list of open referrals and checks it twice a week. We would count how many are still open after fourteen days.”</p>
                 <p>Second, the staff who do the work. They ask: how will my week change? So the team says: “You would keep one list and check it twice a week. If a referral is open after fourteen days, you call the specialist’s office.”</p>
-                <p>Third, the specialist’s office, at the other end of the referral. They ask: what do you need from us? So the team says: “When you get a referral from us, please send one short note to confirm it. Then we will not need to call you to check.”</p>
+                <p>Third, the specialist’s office, at the other end of the referral. They ask: what do you need from us? So the team says: “Please tell us when you get our referral, and when the visit is scheduled. After the visit, please send us your report.” Getting a referral is not the same as seeing the patient. So the clinic keeps checking until the report comes back.</p>
                 <p>Fourth, the patient. The patient asks: what should I do? So the message is simple. “If you have not heard about your specialist visit in one week, please call us.”</p>
-                <p>The finding stays the same. The words change, because each person has a different question. And one more thing. Listen before you write. Ask staff and patients what they need, before you decide what to recommend.</p>
+                <p>The finding stays the same. The words change, because each person has a different question. The times in these messages are made up for teaching. A real clinic sets them by how urgent the visit is, and by its own rules. And one more thing. Listen before you write. Ask staff and patients what they need, and what already works, before you decide what to recommend.</p>
               </div>
             </details>
           </div>
@@ -751,7 +752,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
                 <div class="card"><h2>Who is at the other end of the referral?</h2></div>
                 <div class="card"><h2>Who is affected?</h2></div>
               </div>
-              <p class="lead">Each person needs a different message. And listen first: ask staff and patients before you decide what to recommend.</p>
+              <p class="lead">Each person needs a different message. And listen first: ask staff and patients what they need and what already works.</p>
             </div>
             <details class="more">
               <summary>Words to know</summary>
@@ -782,13 +783,14 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
               </details>
               <details class="more">
                 <summary>To the specialist’s office</summary>
-                <div class="inside"><p>“When you get a referral from us, please send one short note to confirm it. Then we will not need to call you to check.”</p></div>
+                <div class="inside"><p>“Please tell us when you get our referral, and when the visit is scheduled. After the visit, please send us your report.”</p></div>
               </details>
               <details class="more">
                 <summary>To the patient</summary>
                 <div class="inside"><p>“If you have not heard about your specialist visit in one week, please call us.”</p></div>
               </details>
             </div>
+            <p class="src">The times in these messages (one week, 14 days, two months) are made up for teaching. A real clinic sets them by how urgent the visit is, and by its own rules.</p>
           </div>
         </section>
 
@@ -871,11 +873,11 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
             <details class="more">
               <summary>Read the video text</summary>
               <div class="inside">
-                <p>How far can you trust your evidence? It depends on the kind of evidence. Let us look at three kinds, using real examples from Alabama.</p>
-                <p>First, public data. This is CDC PLACES, a free source of health estimates for every county. CDC is the national public health agency. It estimates that twenty-seven percent of adults in Greene County have diagnosed diabetes. In Tuscaloosa County, it is twelve percent. This is useful. It shows a difference between counties. But it does not tell you how many patients one clinic sees. Public data describes a county, not a clinic.</p>
+                <p>How far can you trust your evidence? Let us look at three kinds, using real examples from Alabama.</p>
+                <p>First, public data. This is CDC PLACES, a free source of health estimates for every county. CDC is the national public health agency. It estimates that twenty-seven percent of adults in Greene County have diagnosed diabetes. In Tuscaloosa County, it is twelve percent. This shows a difference between counties. But this data describes all adults in a county. It does not describe the patients of one clinic.</p>
                 <p>Second, programs from other places. This is the Rural Health Information Hub, or RHIhub. Its Models and Innovations section lists rural programs by topic. Under Transportation, we find Kid One Transport, a real program in Alabama. It gives rides to medical visits for children and pregnant women. Its page shares results that families reported. Many reported fewer emergency room visits. That is useful. But families reported this themselves, and the page does not describe a comparison group. So we say “families reported.” We do not say “the rides caused it.”</p>
                 <p>Before you use a program, ask three questions. Was it tried in a rural place? Did it need money or staff that your clinic does not have? Did it serve people like yours? Kid One uses about twenty vehicles and trained drivers. A small clinic could not run this alone, but it could work with a program like it.</p>
-                <p>Third, local evidence. A manager tells you, “We follow up on every referral.” That is useful, but it is only what someone said. Ask staff to show you a recent example, with no patient names. Seeing the work is stronger than hearing about it. A document is useful too, but a written rule does not prove that people follow it.</p>
+                <p>Third, local evidence. A manager tells you, “We follow up on every referral.” That is useful, but it is only what someone said. Ask staff to show you the steps with a blank form or a made-up case. Do not ask to see real patient records. Seeing the work is stronger than hearing about it. But one example does not show that it always happens. A document helps too, but a written rule does not prove that people follow it.</p>
                 <p>So say how you know. Now read a few lines, and try the questions.</p>
               </div>
             </details>
@@ -887,7 +889,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
             <div class="body" data-read>
               <p class="lead">Use three kinds of evidence, and know the limits of each.</p>
               <div class="cards c3">
-                <div class="card"><h2>Public data</h2><p>describes a county. It does not describe one clinic.</p></div>
+                <div class="card"><h2>Public data</h2><p>describes a whole group, such as all adults in a county. It does not describe one clinic’s patients.</p></div>
                 <div class="card"><h2>Programs from other places</h2><p>show what happened there. Ask if it would fit here.</p></div>
                 <div class="card"><h2>Local evidence</h2><p>comes from staff and patients. Say how you know: someone said it, you saw it, or a document shows it.</p></div>
               </div>
@@ -898,6 +900,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
                 <dl class="words">
                   <div><dt>Evidence</dt><dd>Information that supports what you say.</dd></div>
                   <div><dt>Estimate</dt><dd>A careful calculation. It is not an exact count.</dd></div>
+                  <div><dt>Adjusted for age</dt><dd>Changed so that places with older or younger people can be compared fairly.</dd></div>
                   <div><dt>Comparison group</dt><dd>A similar group without the program. It shows what might have happened anyway.</dd></div>
                 </dl>
               </div>
@@ -913,7 +916,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
                 <dt>Greene County, Alabama</dt><dd>27.1%</dd>
                 <dt>Tuscaloosa County, Alabama</dt><dd>12.0%</dd>
               </dl>
-              <p class="src">Source: CDC PLACES, 2023 estimates. Greene County’s likely range is 23.9% to 30.2%.</p>
+              <p class="src">Source: <a href="https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb" target="_blank" rel="noopener">CDC PLACES</a>, 2025 release, 2023 data. Greene County’s likely range is 23.9% to 30.2%. These numbers are not adjusted for age. Adjusted for age, they are 21.1% and 12.4%.</p>
               <p class="stem">Which sentence is honest?</p>
               <div class="opts">
                 <button type="button" class="opt" data-ok="0" data-fb="The number describes adults in the county. It does not describe the patients at one clinic."><span>27% of the patients at a Greene County clinic have diabetes.</span></button>
@@ -931,7 +934,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
               <p class="stem"><span class="q-num">Question 2 of 3</span>A clinic manager tells you: “We follow up on every referral.” What should you do?</p>
               <div class="opts">
                 <button type="button" class="opt" data-ok="0" data-fb="The manager knows a lot, but saying it is not the same as seeing it."><span>Treat it as proof. The manager knows the clinic.</span></button>
-                <button type="button" class="opt" data-ok="1" data-fb="Record what was said. Then ask staff to show you a recent example, with no patient names."><span>Record it as what the manager said, and ask to see an example.</span></button>
+                <button type="button" class="opt" data-ok="1" data-fb="Record what was said. Then ask staff to show you the steps with a blank form, not patient records."><span>Record it as what the manager said, and ask staff to show you the steps.</span></button>
                 <button type="button" class="opt" data-ok="0" data-fb="It is still useful. Keep it, and say where it came from."><span>Ignore it. It is only an opinion.</span></button>
               </div>
               <p class="fb" aria-live="polite" hidden></p>
@@ -1006,11 +1009,11 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
               <summary>Read the video text</summary>
               <div class="inside">
                 <p>Here is a recommendation a student team might write. It is made up, and it is weak. “Rural clinics face many challenges, and new technology is changing health care. Our solution will save money and help patients get care faster. The clinic should adopt it.” Let us fix it in four steps.</p>
-                <p>Step one. Start with the decision. The manager should know from the first sentence what we are asking. So we write: “We suggest that the clinic test one change for two months. One staff member keeps a list of open referrals and checks it twice a week.” We can also say what we are not asking for: “You do not need to buy a new system.”</p>
-                <p>Step two. Say what you know, and what you do not know. “Staff told us that referrals get lost, but we have not measured how often.” This is honest, and it builds trust.</p>
-                <p>Step three. Show the cost. The weak version said it would save money. But this change adds staff time. So we write: “This adds about ten minutes of staff time, twice a week. That is our estimate. We do not know yet whether it saves money.” Also ask what could get worse. Does the work just move to someone else?</p>
-                <p>Step four. Give a small next step. Who does it, by when, and how will you know it worked? “The manager reviews the count each month. After two months, the manager decides whether to continue.” Also ask who will keep it going after that.</p>
-                <p>Now check your words. Read it to someone outside your field. Ask them to explain it back. A listener might say: “So one person checks a list of referrals twice a week, for two months, and then you decide if it helped?” If they can explain it in their own words, your message is clear. If they cannot, change it.</p>
+                <p>Step one. Start with the decision. Put the request in the first sentence. So we write: “We suggest that the clinic test one change for two months. One staff member keeps a list of open referrals and checks it twice a week.” Then say why you chose this change. “We also thought about a new computer system, but it would cost too much for a first test.”</p>
+                <p>Step two. Say what you know, and what you do not know. “Staff told us that referrals get lost, but we have not measured how often.” Honesty builds trust.</p>
+                <p>Step three. Show the cost. The weak version said it would save money. But this change adds staff time. So we write: “This adds about ten minutes of staff time, twice a week. We do not know yet whether it saves money.” Also ask what could get worse. Does the work just move to someone else?</p>
+                <p>Step four. Give a small next step. Who does it, by when, and how will you know it worked? “First, staff look at last month’s referrals: out of every ten, how many were still open after fourteen days? Each month, the manager checks again. If fewer stay open, and staff have the time, the clinic continues. If not, it changes the plan or stops.” Also ask who will keep it going after that.</p>
+                <p>Now check your words. Read it to someone outside your field. Ask them to explain it back. A listener might say: “So one person checks a list of referrals twice a week, for two months, and then you decide if it helped?” If they cannot explain it in their own words, change it.</p>
               </div>
             </details>
           </div>
@@ -1019,10 +1022,10 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
         <section class="screen" id="p4-read" data-step="Read" data-label="Four steps to a useful recommendation" hidden>
           <div class="body">
             <div class="cards c2" data-read>
-              <div class="card"><span class="num">1</span><h2>Start with the decision.</h2><p>Say what you suggest in the first sentence.</p></div>
+              <div class="card"><span class="num">1</span><h2>Start with the decision.</h2><p>Say what you suggest in the first sentence, and why you chose it.</p></div>
               <div class="card"><span class="num">2</span><h2>Say what you know, and what you do not know.</h2><p>Honesty builds trust.</p></div>
               <div class="card"><span class="num">3</span><h2>Show the cost.</h2><p>Include money and staff time, and say what could get worse.</p></div>
-              <div class="card"><span class="num">4</span><h2>Give a small next step.</h2><p>Who does it, by when, and how will you know it worked?</p></div>
+              <div class="card"><span class="num">4</span><h2>Give a small next step.</h2><p>Who does it, by when? What will you compare, and what result means continue, change, or stop?</p></div>
             </div>
             <details class="more">
               <summary>Words to know</summary>
@@ -1057,7 +1060,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
               <div class="opts">
                 <button type="button" class="opt" data-ok="0" data-fb="This is too large and too costly for a first step."><span>Buy a new referral system for all clinics in the county.</span></button>
                 <button type="button" class="opt" data-ok="0" data-fb="This sounds good, but it does not say who does what, by when."><span>Improve communication about referrals.</span></button>
-                <button type="button" class="opt" data-ok="1" data-fb="It says who does it, for how long, and how the clinic will know if it helped."><span>For two months, one staff member checks open referrals twice a week. The manager reviews the count each month.</span></button>
+                <button type="button" class="opt" data-ok="1" data-fb="It says who does it, for how long, what is counted, and what it is compared with."><span>For two months, one staff member checks open referrals twice a week. Each month, the manager compares how many stay open past 14 days with the month before the test.</span></button>
               </div>
               <p class="fb" aria-live="polite" hidden></p>
             </div>
@@ -1067,28 +1070,44 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
         <section class="screen" id="p4-write" data-step="Try" data-label="Write your own" hidden>
           <div class="body">
             <div class="build">
-              <p class="lead">Write three short sentences about your own idea. Nothing is saved or sent.</p>
-              <label for="b1">1. What do you suggest?
+              <p class="lead">Write four short sentences about your own idea, one for each step. Nothing is saved or sent.</p>
+              <label for="b1">1. What do you suggest, and why this change?
                 <textarea id="b1" rows="2" placeholder="We suggest that..."></textarea>
               </label>
               <label for="b2">2. What is your best evidence, and what do you not know yet?
                 <textarea id="b2" rows="2" placeholder="We found that... We do not know yet..."></textarea>
               </label>
-              <label for="b3">3. What is the first small step? Who, by when, and how will you know?
-                <textarea id="b3" rows="2" placeholder="For two months,..."></textarea>
+              <label for="b3">3. What will it cost, and what could get worse?
+                <textarea id="b3" rows="2" placeholder="This adds about..."></textarea>
+              </label>
+              <label for="b4">4. What is the first small step? Who, by when, and what result means continue or stop?
+                <textarea id="b4" rows="2" placeholder="For two months,..."></textarea>
               </label>
               <div class="preview">
                 <p class="tag-small" id="ptag">Made-up example</p>
-                <p id="ptext" aria-live="polite">We suggest that the clinic test one change for two months: one staff member keeps a list of open referrals and checks it twice a week. Staff told us that referrals get lost, but we have not measured how often. The manager would review the count each month, and then decide whether to continue.</p>
+                <p id="ptext" aria-live="polite">We suggest a two-month test: one staff member keeps a list of open referrals and checks it twice a week, which costs far less than a new computer system. Staff told us that referrals get lost, but we have not measured how often. This adds about ten minutes of staff time, twice a week, and we do not know yet whether it saves money. Each month, the manager compares how many referrals stay open past 14 days with the month before the test; if fewer stay open and staff have the time, the clinic continues.</p>
               </div>
               <button type="button" class="btn" id="bcopy">Copy my text</button>
+              <details class="more">
+                <summary>Planning a test? Check six things</summary>
+                <div class="inside">
+                  <ol class="plan-list">
+                    <li>What do you want to improve?</li>
+                    <li>What happens now, before the change?</li>
+                    <li>What will you measure during the test?</li>
+                    <li>Who will do the work, and for how long?</li>
+                    <li>What staff time or cost will it take, and what could get worse?</li>
+                    <li>What result would make you continue, change, or stop?</li>
+                  </ol>
+                </div>
+              </details>
             </div>
           </div>
         </section>
 
         <section class="screen" id="p4-think" data-step="Think" data-label="Explain it back" hidden>
           <div class="body">
-            <p class="think-card">Read your three sentences to someone outside your field. Ask them to explain it back. What did you change?</p>
+            <p class="think-card">Read your four sentences to someone outside your field. Ask them to explain it back. What did you change?</p>
           </div>
         </section>
 
@@ -1329,7 +1348,12 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
             <p class="lead">Use the sources on this page whenever you need them. If this work interests you, please keep going. Rural Alabama needs people who can listen, use evidence well, and explain ideas clearly.</p>
             <div class="card">
               <h2>In the challenge?</h2>
-              <p>The challenge judges will read your proposal and watch your presentation. Write as if the leader of a rural clinic will read your work. The templates are on the Resources and Templates page.</p>
+              <p>The challenge judges will read your proposal and watch your presentation. Write as if the leader of a rural clinic will read your work. These pages help you prepare:</p>
+              <ul class="links">
+                <li><a href="../course-6-topic-1.html" target="_blank" rel="noopener">The 4–5 page proposal guide</a></li>
+                <li><a href="../course-6-topic-2.html" target="_blank" rel="noopener">The 5–7 slide presentation guide</a></li>
+                <li><a href="../../resources.html" target="_blank" rel="noopener">Resources and Templates</a></li>
+              </ul>
             </div>
           </div>
         </section>
@@ -1731,7 +1755,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
     }
   }
 
-  var inputs = ['b1', 'b2', 'b3'].map(function (id) { return document.getElementById(id); });
+  var inputs = ['b1', 'b2', 'b3', 'b4'].map(function (id) { return document.getElementById(id); });
   var ptext = document.getElementById('ptext');
   var ptag = document.getElementById('ptag');
   var example = ptext.textContent;
