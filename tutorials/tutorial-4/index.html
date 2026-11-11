@@ -502,7 +502,7 @@ body.closed main { margin-left: 0; }
   var $ = function (s, el) { return (el || document).querySelector(s); };
   var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
 
-  // Progress is a convenience. The course still works if storage is blocked.
+  // Progress is a convenience. The tutorial still works if storage is blocked.
   function load() { try { var s = JSON.parse(localStorage.getItem(KEY)); if (s && s.done) state = s; } catch (e) {} }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
 
