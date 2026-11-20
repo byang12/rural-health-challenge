@@ -532,9 +532,44 @@ strong { font-weight: 700; }
   display: block;
 }
 
+/* ---------- Awareness video card (home) ---------- */
+/* Sits on the hero edge; the key dates card follows below it. */
+
+.home-video-wrap { position: relative; z-index: 2; margin-top: -96px; }
+
+.home-video {
+  display: grid;
+  gap: 20px 40px;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--sand-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+@media (min-width: 640px) {
+  .home-video { padding: 28px 32px; }
+}
+@media (min-width: 900px) {
+  .home-video { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); }
+}
+
+.home-video-text h2 { font-size: 1.4rem; margin: 0 0 0.5em; }
+.home-video-text p:last-child { margin-bottom: 0; }
+.home-video-note { font-size: 0.95rem; color: var(--ink-muted); }
+
+.home-video-frame {
+  aspect-ratio: 16 / 9;
+  background: var(--footer-bg);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.home-video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+
 /* ---------- Key dates card (home) ---------- */
 
 .key-dates-wrap { position: relative; z-index: 2; margin-top: -96px; }
+.home-video-wrap + .key-dates-wrap { margin-top: 24px; }
 
 .key-dates {
   background: var(--white);
@@ -1321,11 +1356,12 @@ tbody th { font-weight: 700; }
   .site-header { border-top: 0; }
   .hero { background: none; color: #000; padding: 0 0 16px; }
   .hero h1, .hero .eyebrow-light { color: #000; }
-  .key-dates-wrap { margin-top: 0; }
+  .key-dates-wrap, .home-video-wrap { margin-top: 0; }
+  .home-video-frame { display: none; }
   .page-hero { background: none; padding: 16px 0; }
   .site-footer { background: none; color: #000; border-top: 1px solid #999; padding: 16px 0 0; }
   .site-footer a, .footer-title, .footer-about p:not(.footer-title), .footer-bottom { color: #000; }
-  .card, .callout, .ref, .faq-item, .key-dates { box-shadow: none; break-inside: avoid; }
+  .card, .callout, .ref, .faq-item, .key-dates, .home-video { box-shadow: none; break-inside: avoid; }
   .course-layout { display: block; }
   .page-body a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; word-break: break-all; }
 }
